@@ -27,6 +27,12 @@
 .App-link {
   color: #61dafb;
 }
+.mainText{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  align-content: center;
+
+}
 
 @keyframes App-logo-spin {
   from {
