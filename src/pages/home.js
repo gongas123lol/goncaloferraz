@@ -102,7 +102,7 @@ function Home() {
                                 className="card-button"
                                 onClick={() => toggleModal(3)}
                             >
-                                HERE
+                                HEREE
                             </button>
                         </div>
                     </div>
