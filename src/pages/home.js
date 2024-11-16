@@ -2,6 +2,8 @@ import '../App.css';
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import earlyLife from "./EarlyLife";
+import Fsisel from "./Fsisel";
+import Education from "./Education";
 function toggleModal(cardId) {
     console.log(`Card ${cardId} clicked!`);
 }
