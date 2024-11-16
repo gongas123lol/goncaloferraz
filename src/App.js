@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbarm from './components/Navbarm';
 import Contacts from './pages/Contacts';
 import Home from "./pages/home";
+import EarlyLife from "./pages/EarlyLife";
 
 
 function App() {
@@ -13,8 +14,7 @@ function App() {
                 {/* Define specific routes */}
                 <Route path="/home" element={<Home />} />
                 <Route path="/contacts" element={<Contacts />} />
-
-                {/* Redirect from "/" to "/home" */}
+                <Route path="/early-life" element={<EarlyLife/>} />
                 <Route path="/" element={<Navigate to="/home" replace />} />
             </Routes>
         </Router>

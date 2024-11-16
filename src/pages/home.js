@@ -1,10 +1,13 @@
 import '../App.css';
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import earlyLife from "./EarlyLife";
 function toggleModal(cardId) {
     console.log(`Card ${cardId} clicked!`);
 }
 
 function Home() {
+    const navigate = useNavigate();
     return (
         <div className="container">
             <div className="row">
@@ -33,7 +36,7 @@ function Home() {
                             </p>
                             <button
                                 className="card-button"
-                                onClick={() => toggleModal(1)}
+                                onClick={() => navigate("/early-life")}
                             >
                                 HERE
                             </button>
@@ -56,7 +59,7 @@ function Home() {
 
                             <button
                                 className="card-button"
-                                onClick={() => toggleModal(2)}
+                                onClick={() => navigate(earlyLife)}
                             >
                                 HERE
                             </button>
@@ -100,9 +103,9 @@ function Home() {
 
                             <button
                                 className="card-button"
-                                onClick={() => toggleModal(3)}
+                                onClick={() => navigate("/early-life")}
                             >
-                                HEREE
+                                HERE
                             </button>
                         </div>
                     </div>
