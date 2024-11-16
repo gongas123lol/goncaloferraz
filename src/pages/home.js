@@ -61,7 +61,7 @@ function Home() {
 
                             <button
                                 className="card-button"
-                                onClick={() => navigate(earlyLife)}
+                                onClick={() => navigate("/education")}
                             >
                                 HERE
                             </button>
@@ -84,7 +84,7 @@ function Home() {
 
                             <button
                                 className="card-button"
-                                onClick={() => toggleModal(3)}
+                                onClick={() => navigate("/fsisel")}
                             >
                                 Here
                             </button>
@@ -105,7 +105,7 @@ function Home() {
 
                             <button
                                 className="card-button"
-                                onClick={() => navigate("/early-life")}
+                                onClick={() => navigate("/personalprojects")}
                             >
                                 HERE
                             </button>
