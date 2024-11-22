@@ -1,4 +1,10 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
+const images = [
+    '/images/civic.jpg',
+    '/images/benz.jpg'
+];
 
 function EarlyLife() {
     return (
@@ -14,6 +20,17 @@ function EarlyLife() {
             <p>My 2th biggest passion is cars, and everything motorized. It all started with my dad taking me to classic cars shows, me playing racing videogames such as: Gran Turismo, Grand Theft Auto, etc.<br/>
             Currently i own a 1989 Mercedes-Benz E-Klasse 300D, and an 1997 Honda Civic EK3.
             </p>
+            <Carousel>
+                {images.map((image, index) => (
+                    <Carousel.Item key={index}>
+                        <img
+                            className="d-block w-100"
+                            src={image}
+                            alt={`Car image ${index + 1}`}
+                        />
+                    </Carousel.Item>
+                ))}
+            </Carousel>
         </div>
     );
 }
