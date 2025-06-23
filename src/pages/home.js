@@ -29,14 +29,14 @@ function Home() {
             title: "FSISEL",
             description: "Click here to learn more about my journey @FSISEL.",
             image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fformulastudent.isel.pt%2Fstatic%2Fmedia%2Fifs02_1.7a687b04.webp&f=1&nofb=1&ipt=72cebf4b26ccada643cc6ce8122b2abc6f8668c909518860ea42bfa6219386ac&ipo=images",
-            onClick: () => console.log("Card 3 clicked!"),
+            onClick: () => navigate("/fsisel"),
         },
         {
             id: 4,
             title: "Personal Projects",
             description: "Click here to learn more about my personal projects.",
             image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F11%2FGitHub-Symbol.png&f=1&nofb=1&ipt=c86224fb338636707ec0b6e035d4d7fde0eb92052c17ed9d64f53fbcb0acdf3c&ipo=images",
-            onClick: () => navigate("/personal-projects"),
+            onClick: () => navigate("/personalprojects"),
         },
     ];
 

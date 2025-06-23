@@ -1,7 +1,16 @@
 .App {
   text-align: center;
 }
-
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -102,29 +111,34 @@
   padding-bottom: 5px;
   border-radius: 10px;
   border: 2px #f8f9fa;
-  position: relative; /* Ensure it's part of the flow */
+  position: relative;
   text-align: Left;
   height: 50px;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Make the page layout use flexbox for proper footer positioning */
-body, html {
-  height: 100%; /* Ensure the full height includes the viewport */
-  margin: 0;
+.footer {
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
 }
 
-#root {
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Allow the root container to stretch */
+  min-height: 100vh;
 }
 
 .content {
-  flex: 1; /* Pushes the footer to the bottom when content is small */
+  flex: 1;
 }
-
 .centered-container{
   margin: auto;
   text-align: center;

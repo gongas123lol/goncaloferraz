@@ -8,10 +8,11 @@ import Footer from "./components/Footer";
 import Fsisel from "./pages/Fsisel";
 import Education from "./pages/Education";
 import PersonalProjects from "./pages/PersonalProjects";
-
+import ScrollToTop from './components/scrolltotop';
 function App() {
     return (
         <Router>
+            <ScrollToTop></ScrollToTop>
             <Navbarm />
             <Routes>
                 <Route path="/home" element={<Home />} />
@@ -22,7 +23,7 @@ function App() {
                 <Route path="/personalprojects" element={<PersonalProjects/>}/>
                 <Route path="/" element={<Navigate to="/home" replace />} />
             </Routes>
-            <Footer/>
+
         </Router>
     );
 }
