@@ -14,7 +14,7 @@ function Education(){
 
             <div style={{ maxWidth: 600, margin: 'auto' }}>
                 <h1>My academic career</h1>
-
+                <br/>
                 <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
                     {steps.map((step, index) => (
                         <li key={step.id} style={{ marginBottom: 20 }}>

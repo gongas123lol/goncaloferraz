@@ -28,7 +28,7 @@ function Home() {
             id: 3,
             title: "FSISEL",
             description: "Click here to learn more about my journey @FSISEL.",
-            image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fformulastudent.isel.pt%2Fstatic%2Fmedia%2Fifs02_1.7a687b04.webp&f=1&nofb=1&ipt=72cebf4b26ccada643cc6ce8122b2abc6f8668c909518860ea42bfa6219386ac&ipo=images",
+            image: "https://formulastudent.isel.pt/static/media/ifs02_1.7a687b04ac27e6f5c4f4.webp",
             onClick: () => navigate("/fsisel"),
         },
         {
